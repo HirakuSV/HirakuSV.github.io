@@ -134,3 +134,15 @@
         transform: rotate(50deg);
     }
 }
+
+footer {
+    position: absolute;
+    color: #FFFFFF;
+    bottom: -1003px;
+    right: 325px;
+    text-align: center;
+}
+
+footer a {
+    color: #FFFFFF;
+}
