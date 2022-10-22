@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="bsc.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="icon" type="image/x-icon" href="./Assets/apple.png">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/c0b785182d.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Pratik</title>
@@ -39,7 +38,7 @@
         <img src="./Assets/ghost.png" alt="ghost" class="ghost">
         <h4 class="title">Heya, I'm <span class="color">Pratik Bawane</span>!</h4>
         <p class="disci">I make <span class="color">Bots, websites and a lot of cool <br>stuff!</span></p>
-        <a href="./error.html" class="button">Download CV</a>
+        <a class="button" di><i class="fa-solid fa-lock"></i> Download CV</a>
         <div class="socials">
             <ul>
                 <li><a href="https://instagram.com/ig_ray777"><i class="fa-brands fa-instagram" id="ins"></i></a></li>
@@ -106,7 +105,6 @@
             ripples.style.left = `${x}px`;
             ripples.style.top = `${y}px`;
             this.appendChild(ripples);
-
             setTimeout(() => {
                 ripples.remove();
             }, 1000)
