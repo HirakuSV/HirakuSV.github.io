@@ -9,7 +9,7 @@
 .abtcontains img {
     position: absolute;
     width: 250px;
-    left: 322px;
+    left: 353px;
     top: -277px;
     border-radius: 50%;
 }
@@ -17,17 +17,17 @@
 .abtcontains h1 {
     position: relative;
     top: -32px;
-    left: -67px;
+    left: -40px;
     font-size: 40px;
 }
 
 .abtcontains p {
     position: relative;
     font-size: 19px;
-    left: -26px;
-    top: -30px;
+    left: -40px;
+    top: -45px;
 }
 
 .abtcontains a {
-    color: #fff;
+    color: #8630F2;
 }
