@@ -1,0 +1,33 @@
+.abtcontains {
+    position: absolute;
+    color: #fff;
+    top: 1073px;
+    left: 231px;
+    text-align: center;
+}
+
+.abtcontains img {
+    position: absolute;
+    width: 250px;
+    left: 322px;
+    top: -277px;
+    border-radius: 50%;
+}
+
+.abtcontains h1 {
+    position: relative;
+    top: -32px;
+    left: -67px;
+    font-size: 40px;
+}
+
+.abtcontains p {
+    position: relative;
+    font-size: 19px;
+    left: -26px;
+    top: -30px;
+}
+
+.abtcontains a {
+    color: #fff;
+}
