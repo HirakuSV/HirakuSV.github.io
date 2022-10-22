@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#8630F2">
+    <meta name="favicon" src="./Assets/ghost.png">
+    <meta name="description" content="I'm a computer programmer who loves creating INTERNET ROBOTS!">
+    <meta name="keywords" content="portfolio, website, prateek bawane, pratik">
+    <meta name="author" content="Pratik Bawane">
+    <meta property="og:title" content="Pratik">
+    <meta property="og:type" content="website">
+    <meta propy="og:image" content="./Assets/home-preview.png">
+    <meta property="og:image:width" content="450" />
+    <meta property="og:image:height" content="298" />
+    <meta property="og:description" content="I'm a computer programmer who loves creating INTERNET ROBOTS!">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="bsc.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" type="image/x-icon" href="./Assets/apple.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c0b785182d.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>Pratik</title>
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html">
+            <h1 class="logo">Pratik</h1>
+        </a>
+        <ul>
+            <li><a href="./about.html"><i class="fa-solid fa-user"></i>&nbsp; About</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-phone"></i>&nbsp; Contact me</a></li>
+            <li><a href="./error.html"><i class="fa-solid fa-heart"></i>&nbsp; Social Media</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <img src="./Assets/ghost.png" alt="ghost" class="ghost">
+        <h4 class="title">Heya, I'm <span class="color">Pratik Bawane</span>!</h4>
+        <p class="disci">I make <span class="color">Bots, websites and a lot of cool <br>stuff!</span></p>
+        <a href="./error.html" class="button">Download CV</a>
+        <div class="socials">
+            <ul>
+                <li><a href="https://instagram.com/ig_ray777"><i class="fa-brands fa-instagram" id="ins"></i></a></li>
+                <li><a href="https://twitter.com/iam_ray_uwu"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://discord.gg/WVdzEFgWBE"><i class="fa-brands fa-discord"></i></a></li>
+                <li><a href="https://youtube.com/channel/UCkNDtFCb9cJHcmv_HBsFwHg"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="splash">
+            <img src="./Assets/apple.png" alt="apple" class="apple">
+            <img src="./Assets/ball.png" alt="ball" class="ball">
+            <img src="./Assets/diamond.png" alt="diamond" class="diamond">
+        </div>
+    </div>
+    <div id="contact">
+        <div class="cninfo">
+            <div class="textbox">
+                <h2>Reach out to me</h2>
+                <p>Have something in mind?<br>Let me know!</p>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>&nbsp; Pune, Maharastra, India <br>
+                    <i class="fa-solid fa-envelope"></i>&nbsp; nooblance857@gmail.com
+                </p>
+                <h4>My social accounts ></h4>
+                <ul>
+                    <li><a href="https://instagram.com/ig_ray777"><i class="fa-brands fa-instagram" id="ins"></i></a></li>
+                    <li><a href="https://twitter.com/iam_ray_uwu"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://discord.gg/WVdzEFgWBE"><i class="fa-brands fa-discord"></i></a></li>
+                    <li><a href="https://youtube.com/channel/UCkNDtFCb9cJHcmv_HBsFwHg"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cnform">
+            <form action="https://formsubmit.co/pbawane899@gmail.com" method="post">
+                <h3 class="title">Contact</h3>
+                <div class="frInputs">
+                    <input type="text" name="Name" class="input" placeholder="Name" required>
+                </div>
+                <div class="frInputs">
+                    <input type="email" name="Email" class="input" placeholder="Email" required>
+                </div>
+                <div class="frInputs ta">
+                    <textarea name="Message" class="input" placeholder="Message" required></textarea>
+                </div>
+                <input type="submit" value="Send" class="btn">
+            </form>
+        </div>
+    </div>
+    <script>
+        // alert('Your viewing an beta preview of this website, some features might be unstable.');
+        const btn = document.querySelector('.button');
+        btn.addEventListener('click', function (r) {
+            let x = r.clientX - r.target.offsetLeft;
+            let y = r.clientY - r.target.offsetTop;
+            let ripples = document.createElement('span');
+            ripples.setAttribute('id', 'ripps');
+            ripples.style.left = `${x}px`;
+            ripples.style.top = `${y}px`;
+            this.appendChild(ripples);
+
+            setTimeout(() => {
+                ripples.remove();
+            }, 1000)
+        });
+    </script>
+</body>
+
+</html>

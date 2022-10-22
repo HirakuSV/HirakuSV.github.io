@@ -1,0 +1,91 @@
+#contact {
+    position: absolute;
+    background-color: #fff;
+    width: 675px;
+    height: 455px;
+    right: 358px;
+    top: 890px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px #fff;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cninfo {
+    background: #fff;
+}
+
+.textbox {
+    padding: 2.79px 30.20px;
+}
+
+.textbox ul li {
+    display: inline;
+}
+
+.textbox ul li a i {
+    font-size: 32px;
+}
+
+.cnform {
+    background-color: #8630F2;
+    padding: 0.29rem 2.2rem;
+    z-index: 9;
+    overflow: hidden;
+    position: relative;
+}
+
+.cnform .title {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 0.7rem;
+}
+
+.frInputs {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.input { 
+    width: 100%;
+    outline: none;
+    border: 2px solid #fafafa;
+    background: none;
+    padding: 6px 8px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+textarea.input {
+    min-height: 150px;
+    resize: none;
+    overflow-y: auto;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.btn {
+    padding: 7.6px 12.8px;
+    background: #fff;
+    font-size: 15.2px;
+    font-weight: 200;
+    line-height: 1;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: transparent;
+}
