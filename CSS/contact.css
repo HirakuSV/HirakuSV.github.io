@@ -6,7 +6,6 @@
     right: 328px;
     top: 1431px;
     border-radius: 10px;
-    box-shadow: 0 0 20px 1px #fff;
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
