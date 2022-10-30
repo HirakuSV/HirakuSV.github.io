@@ -63,3 +63,14 @@ nav ul li a:after {
 nav ul li a:hover:after {
     width: 100%;
 }
+
+#hidden {
+    color: transparent;
+    text-shadow: 0 0 8px #000;
+}
+
+#center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}

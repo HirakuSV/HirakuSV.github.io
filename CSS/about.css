@@ -2,16 +2,18 @@
     position: absolute;
     color: #fff;
     top: 1073px;
-    left: 231px;
     text-align: center;
+    left: 50%;
+    transform: translate(-45%);
 }
 
 .abtcontains img {
     position: absolute;
     width: 250px;
-    left: 353px;
     top: -277px;
     border-radius: 50%;
+    left: 50%;
+    transform: translate(-65%);
 }
 
 .abtcontains h1 {
