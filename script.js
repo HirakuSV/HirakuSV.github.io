@@ -1,3 +1,4 @@
+// Ripples animation for buttons
 const btn = document.querySelector('.button');
 btn.addEventListener('click', function (r) {
     let x = r.clientX - r.target.offsetLeft;
@@ -12,13 +13,14 @@ btn.addEventListener('click', function (r) {
     }, 1000)
 });
 
+// Check for URL params
 let str = window.location.search.slice(1, 5);
-
 function getParams(paramNames) {
     let params = new URLSearchParams(window.location.search);
     return params.get(paramNames);
 }
 
+// Update all elements data
 function setUnData() {
     let unElements = document.querySelectorAll('[id=name]');
     let targets = document.querySelectorAll('[class=target]');
@@ -29,4 +31,6 @@ function setUnData() {
 }
 
 if (getParams(str) == 'unofc') setUnData();
+
+// Show not supported page when mobile device dectected
 if (window.innerWidth <= 800 && window.innerHeight <= 600) window.location.href = './notsupported.html';
