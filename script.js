@@ -33,4 +33,7 @@ function setUnData() {
 if (getParams(str) == 'unofc') setUnData();
 
 // Show not supported page when mobile device dectected
-if (window.innerWidth <= 800 && window.innerHeight <= 600) window.location.href = './notsupported.html';
+if (window.innerWidth <= 800 && window.innerHeight <= 600) {
+    console.log('Mobile device dectected!');
+    window.location.href = './notsupported.html';
+}
