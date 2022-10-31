@@ -1,0 +1,30 @@
+img {
+    position: absolute;
+    width: 230px;
+    left: 37%;
+    top: -2%;
+    animation: gshover ease 3.5s infinite;
+}
+
+@keyframes gshover {
+    50% {
+        transform: translateY(15px);
+    }
+}
+
+h1 {
+    position: absolute;
+    color: #8630F2;
+    font-size: 19px;
+    left: 49%;
+    bottom: 49%;
+}
+
+p {
+    position: absolute;
+    color: #fff;
+    top: 275px;
+    left: 115px;
+    font-size: 10px;
+    text-align: center;
+}
