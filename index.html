@@ -105,22 +105,6 @@
         <p>A portfolio created by <span class="target">Pratik</span> with HTML, CSS and a bit of JavaScript. Thank you for visiting!</p>
         <a href="./credits.html">Credits</a>
     </footer>
-    <script>
-        // alert('Your viewing an beta preview of this website, some features might be unstable.');
-        const btn = document.querySelector('.button');
-        btn.addEventListener('click', function (r) {
-            let x = r.clientX - r.target.offsetLeft;
-            let y = r.clientY - r.target.offsetTop;
-            let ripples = document.createElement('span');
-            ripples.setAttribute('id', 'ripps');
-            ripples.style.left = `${x}px`;
-            ripples.style.top = `${y}px`;
-            this.appendChild(ripples);
-            setTimeout(() => {
-                ripples.remove();
-            }, 1000)
-        });
-    </script>
     <script src="./script.js"></script>
 </body>
 </html>
