@@ -1,7 +1,7 @@
 img {
     position: absolute;
-    width: 230px;
-    left: 37%;
+    width: 290px;
+    left: 15%;
     top: -2%;
     animation: gshover ease 3.5s infinite;
 }
@@ -15,16 +15,15 @@ img {
 h1 {
     position: absolute;
     color: #8630F2;
-    font-size: 19px;
-    left: 49%;
-    bottom: 49%;
+    font-size: 30px;
+    margin: 10px 65px 0;
+    top: 40%;
 }
 
 p {
     position: absolute;
     color: #fff;
-    top: 275px;
-    left: 115px;
-    font-size: 10px;
+    top: 55%;
+    font-size: 15px;
     text-align: center;
 }
