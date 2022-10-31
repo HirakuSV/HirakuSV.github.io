@@ -29,7 +29,4 @@ function setUnData() {
 }
 
 if (getParams(str) == 'unofc') setUnData();
-
-function detectMob() {
-    if (window.innerWidth <= 800 && window.innerHeight <= 600) window.location.href = './notsupported.html'
-}
+if (window.innerWidth <= 800 && window.innerHeight <= 600) window.location.href = './notsupported.html';
