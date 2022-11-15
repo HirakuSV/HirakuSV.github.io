@@ -28,6 +28,7 @@ function setUnData() {
     unElements.forEach(r => r.innerHTML = 'Ray');
     targets.forEach(r => r.setAttribute('id', 'hidden'))
     abtLogo.innerHTML = 'Ray-chan';
+    document.title = 'Ray';
 }
 
 if (getParams(str) == 'unofc') setUnData();
