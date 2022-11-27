@@ -30,8 +30,15 @@ function setUnData() {
     abtLogo.innerHTML = 'Ray-chan';
     document.title = 'Ray';
 }
-
 if (getParams(str) == 'unofc') setUnData();
+
+// Age calculator by https://www.javatpoint.com/calculate-age-using-javascript
+let dob = new Date("06/19/2007");
+let monthDiff = Date.now() - dob.getTime();
+let ageDate = new Date(monthDiff);
+let year = ageDate.getUTCFullYear();
+let age = Math.abs(year - 1970);
+document.getElementById('age').innerText = age;
 
 // Show not supported page when mobile device dectected
 let check = false;
