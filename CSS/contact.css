@@ -3,8 +3,9 @@
     background-color: #fff;
     width: 675px;
     height: 455px;
-    right: 328px;
+    left: 50%;
     top: 1431px;
+    transform: translateX(-50%);
     border-radius: 10px;
     overflow: hidden;
     display: grid;
