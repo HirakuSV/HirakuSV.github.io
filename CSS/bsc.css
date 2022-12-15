@@ -16,10 +16,6 @@ html {
     scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar {
-    width: 10px;
-}
-
 nav .logo {
     position: absolute;
     width: 131px;
