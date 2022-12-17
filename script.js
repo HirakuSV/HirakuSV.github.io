@@ -58,4 +58,8 @@ rdmBtn.addEventListener('click', () => {
     }
 });
 
+<<<<<<< HEAD
 document.querySelector('.dateIns').innerText = moment(new Date('5/1/2019')).fromNow();
+=======
+document.querySelector('.dateIns').innerText = moment(new Date('5/1/2019')).fromNow();
+>>>>>>> 3e3982920293ef672c0db55468982aed8a800ac3
