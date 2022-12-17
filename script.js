@@ -46,3 +46,16 @@ let ageDate = new Date(monthDiff);
 let year = ageDate.getUTCFullYear();
 let age = Math.abs(year - 1970);
 document.getElementById('age').innerText = age;
+
+const rdmBtn = document.querySelector('.rdmBtn');
+const text = document.querySelector('.text');
+rdmBtn.addEventListener('click', () => {
+    text.classList.toggle('showMore');
+    if (rdmBtn.innerText == 'Read more') {
+        rdmBtn.innerText = 'Read less';
+    } else {
+        rdmBtn.innerHTML = 'Read more';
+    }
+});
+
+document.querySelector('.dateIns').innerText = moment(new Date('5/1/2019')).fromNow();
