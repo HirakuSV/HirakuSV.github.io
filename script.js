@@ -21,23 +21,7 @@ btn.addEventListener('click', function (r) {
 });
 
 // Check for URL params
-let str = window.location.search.slice(1, 5);
-function getParams(paramNames) {
-    let params = new URLSearchParams(window.location.search);
-    return params.get(paramNames);
-}
 
-// Update all elements data
-function setUnData() {
-    let unElements = document.querySelectorAll('[id=name]');
-    let targets = document.querySelectorAll('[class=target]');
-    let abtLogo = document.getElementById('nameAb')
-    unElements.forEach(r => r.innerHTML = 'Ray');
-    targets.forEach(r => r.setAttribute('id', 'hidden'))
-    abtLogo.innerHTML = 'Ray-chan';
-    document.title = 'Ray';
-}
-if (getParams(str) == 'unofc') setUnData();
 
 // Age calculator by https://www.javatpoint.com/calculate-age-using-javascript
 let dob = new Date("06/19/2007");
@@ -59,3 +43,21 @@ rdmBtn.addEventListener('click', () => {
 });
 
 document.querySelector('.dateIns').innerText = moment(new Date('5/1/2019')).fromNow();
+
+let str = window.location.search.slice(1, 5);
+function getParams(paramNames) {
+    let params = new URLSearchParams(window.location.search);
+    return params.get(paramNames);
+}
+
+// Update all elements data
+function setUnData() {
+    let unElements = document.querySelectorAll('[id=name]');
+    let targets = document.querySelectorAll('[class=target]');
+    let abtLogo = document.getElementById('nameAb')
+    unElements.forEach(r => r.innerHTML = 'Ray');
+    targets.forEach(r => r.setAttribute('id', 'hidden'))
+    abtLogo.innerHTML = 'Ray-chan';
+    document.title = 'Ray';
+}
+if (getParams(str) == 'unofc') setUnData();
