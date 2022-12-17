@@ -138,6 +138,7 @@ footer {
     position: absolute;
     color: #FFFFFF;
     bottom: -1700px;
+    bottom: -1633px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
