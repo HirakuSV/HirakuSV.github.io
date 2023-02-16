@@ -39,7 +39,7 @@ rdmBtn.addEventListener('click', () => {
 
 document.querySelector('.dateIns').innerText = moment(new Date('5/1/2019')).fromNow();
 
-let str = window.location.search.slice(1, 5);
+let str = window.location.search.slice(1, 3);
 function getParams(paramNames) {
     let params = new URLSearchParams(window.location.search);
     return params.get(paramNames);
@@ -54,4 +54,4 @@ function setUnData() {
     abtLogo.innerHTML = 'Ray-chan';
     document.title = 'Ray';
 }
-if (getParams(str) == 'unofc') setUnData();
+if (getParams(str) == 'fc') setUnData();
