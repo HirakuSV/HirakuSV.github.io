@@ -31,6 +31,7 @@ rdmBtn.addEventListener('click', () => {
     }
 });
 
+document.getElementById('age').innerText = moment().diff('2007-06-19', 'years');
 document.querySelector('.dateIns').innerText = moment(new Date('5/1/2018')).fromNow();
 
 let str = window.location.search.slice(1, 4);
