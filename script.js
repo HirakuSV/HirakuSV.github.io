@@ -37,7 +37,7 @@ rdmBtn.addEventListener('click', () => {
     }
 });
 
-document.querySelector('.dateIns').innerText = moment(new Date('5/1/2019')).fromNow();
+document.querySelector('.dateIns').innerText = moment(new Date('5/1/2018')).fromNow();
 
 let str = window.location.search.slice(1, 3);
 function getParams(paramNames) {
