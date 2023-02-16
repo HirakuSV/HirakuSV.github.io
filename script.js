@@ -33,7 +33,7 @@ rdmBtn.addEventListener('click', () => {
 
 document.querySelector('.dateIns').innerText = moment(new Date('5/1/2018')).fromNow();
 
-let str = window.location.search.slice(1, 3);
+let str = window.location.search.slice(1, 4);
 function getParams(paramNames) {
     let params = new URLSearchParams(window.location.search);
     return params.get(paramNames);
