@@ -49,5 +49,5 @@ function checkReqParameter() {
     if (reqParam === 'fc') return true;
 }
 
-if (getParams()) document.cookie = "req=fc; expires=0; path=/";
+if (checkReqParameter()) document.cookie = "req=fc; expires=0; path=/";
 if (document.cookie.indexOf("req=fc") !== -1) setUnData();
