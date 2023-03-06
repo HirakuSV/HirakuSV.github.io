@@ -37,7 +37,7 @@ function setUnData() {
     let abtLogo = document.getElementById('nameAb')
     unElements.forEach(r => r.innerHTML = 'Ray');
     targets.forEach(r => r.setAttribute('id', 'hidden'))
-    abtLogo.forEach(r => r.innerHTML = 'Ray-chan');
+    abtLogo.innerHTML = 'Ray-chan';
     document.title = 'Ray';
 }
 document.getElementById('age').innerText = moment().diff('2007-06-19', 'years');
