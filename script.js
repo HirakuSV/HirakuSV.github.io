@@ -49,4 +49,6 @@ function setUnData() {
     abtLogo.innerHTML = 'Ray-chan';
     document.title = 'Ray';
 }
-if (getParams(str) == 'fc') setUnData();
+
+if (getParams(str) == 'fc') document.cookie = "req=fc; expires=0; path=/";
+if (document.cookie.indexOf("req=fc") !== -1) setUnData();
