@@ -18,8 +18,6 @@ btn.addEventListener('click', function (r) {
     }, 1000)
 });
 
-document.getElementById('age').innerText = moment().diff('2007-06-19', 'years');;
-
 const rdmBtn = document.querySelector('.rdmBtn');
 const text = document.querySelector('.text');
 rdmBtn.addEventListener('click', () => {
@@ -41,15 +39,12 @@ function setUnData() {
     document.title = 'Ray';
 }
 
-function checkReqParameter() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const reqParam = urlParams.get('req');
-    if (reqParam === 'fc') return true;
-}
+const urlParams = new URLSearchParams(window.location.search);
+const reqParam = urlParams.get('req');
+if (reqParam === 'fc') document.cookie = "req=fc; expires=0; path=/";
 
-if (checkReqParameter()) document.cookie = "req=fc; expires=0; path=/";
-window.onload = function() {
-  if (document.cookie.includes("req=fc")) {
-    setUnData();
-  }
+window.onload = function () {
+    if (document.cookie.includes("req=fc")) {
+        setUnData();
+    }
 };
