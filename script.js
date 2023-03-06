@@ -40,8 +40,6 @@ function setUnData() {
     abtLogo.innerHTML = 'Ray-chan';
     document.title = 'Ray';
 }
-document.getElementById('age').innerText = moment().diff('2007-06-19', 'years');
-document.querySelector('.dateIns').innerText = moment(new Date('5/1/2018')).fromNow();
 
 function checkReqParameter() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -50,7 +48,6 @@ function checkReqParameter() {
 }
 
 if (checkReqParameter()) document.cookie = "req=fc; expires=0; path=/";
-
 window.onload = function() {
   if (document.cookie.indexOf("req=fc") !== -1) {
     setUnData();
