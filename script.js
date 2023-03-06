@@ -31,15 +31,6 @@ rdmBtn.addEventListener('click', () => {
     }
 });
 
-document.getElementById('age').innerText = moment().diff('2007-06-19', 'years');
-document.querySelector('.dateIns').innerText = moment(new Date('5/1/2018')).fromNow();
-
-let str = window.location.search.slice(1, 4);
-function getParams(paramNames) {
-    let params = new URLSearchParams(window.location.search);
-    return params.get(paramNames);
-}
-
 function setUnData() {
     let unElements = document.querySelectorAll('[id=name]');
     let targets = document.querySelectorAll('[class=target]');
@@ -49,6 +40,14 @@ function setUnData() {
     abtLogo.innerHTML = 'Ray-chan';
     document.title = 'Ray';
 }
+document.getElementById('age').innerText = moment().diff('2007-06-19', 'years');
+document.querySelector('.dateIns').innerText = moment(new Date('5/1/2018')).fromNow();
 
-if (getParams(str) == 'fc') document.cookie = "req=fc; expires=0; path=/";
+let str = window.location.search.slice(1, 4);
+function getParams(paramNames) {
+    let params = new URLSearchParams(window.location.search);
+    return params.get(paramNames);
+}
+
+if (getParams(str) === 'fc') document.cookie = "req=fc; expires=0; path=/";
 if (document.cookie.indexOf("req=fc") !== -1) setUnData();
