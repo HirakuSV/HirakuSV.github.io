@@ -43,8 +43,6 @@ const urlParams = new URLSearchParams(window.location.search);
 const reqParam = urlParams.get('req');
 if (reqParam === 'fc') document.cookie = "req=fc; expires=0; path=/";
 
-window.onload = function () {
-    if (document.cookie.includes("req=fc")) {
-        setUnData();
-    }
-};
+if (document.cookie.includes("req=fc")) {
+    setUnData();
+}
