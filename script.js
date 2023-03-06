@@ -43,11 +43,11 @@ function setUnData() {
 document.getElementById('age').innerText = moment().diff('2007-06-19', 'years');
 document.querySelector('.dateIns').innerText = moment(new Date('5/1/2018')).fromNow();
 
-let str = window.location.search.slice(1, 4);
-function getParams(paramNames) {
-    let params = new URLSearchParams(window.location.search);
-    return params.get(paramNames);
+function checkReqParameter() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const reqParam = urlParams.get('req');
+    if (reqParam === 'fc') return true;
 }
 
-if (getParams(str) === 'fc') document.cookie = "req=fc; expires=0; path=/";
+if (getParams()) document.cookie = "req=fc; expires=0; path=/";
 if (document.cookie.indexOf("req=fc") !== -1) setUnData();
