@@ -49,7 +49,7 @@ function checkReqParameter() {
 
 if (checkReqParameter()) document.cookie = "req=fc; expires=0; path=/";
 window.onload = function() {
-  if (document.cookie.indexOf("req=fc")) {
+  if (document.cookie.includes("req=fc")) {
     setUnData();
   }
 };
