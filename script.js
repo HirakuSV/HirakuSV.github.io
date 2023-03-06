@@ -42,7 +42,4 @@ function setUnData() {
 const urlParams = new URLSearchParams(window.location.search);
 const reqParam = urlParams.get('req');
 if (reqParam === 'fc') document.cookie = "req=fc; expires=0;";
-
-if (document.cookie.includes("req=fc")) {
-    setUnData();
-}
+if (document.cookie.includes("req=fc")) setUnData();
