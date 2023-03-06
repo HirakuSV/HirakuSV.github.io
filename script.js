@@ -50,4 +50,9 @@ function checkReqParameter() {
 }
 
 if (checkReqParameter()) document.cookie = "req=fc; expires=0; path=/";
-if (document.cookie.indexOf("req=fc") !== -1) setUnData();
+
+window.onload = function() {
+  if (document.cookie.indexOf("req=fc") !== -1) {
+    setUnData();
+  }
+};
