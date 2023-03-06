@@ -19,9 +19,9 @@ btn.addEventListener('click', function (r) {
 });
 
 const rdmBtn = document.querySelector('.rdmBtn');
-const text = document.querySelector('.text');
+const textSeq = document.querySelector('.text');
 rdmBtn.addEventListener('click', () => {
-    text.classList.toggle('showMore');
+    textSeq.classList.toggle('showMore');
     if (rdmBtn.innerText == 'Read more') {
         rdmBtn.innerText = 'Read less';
     } else {
