@@ -82,8 +82,8 @@
 .socials {
     position: absolute;
     font-size: 32px;
-    left: 74px;
-    top: 244px;
+    left: 45px;
+    top: 222px;
 }
 
 .socials ul li {
@@ -137,10 +137,9 @@
 footer {
     position: absolute;
     color: #FFFFFF;
-    bottom: -1700px;
-    bottom: -1633px;
+    bottom: -1900px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-53%);
     text-align: center;
 }
 
