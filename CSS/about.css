@@ -33,18 +33,3 @@
 .abtcontains a {
     color: #8630F2;
 }
-
-.moreText {
-    display: none;
-}
-
-.rdmBtn {
-    background: none;
-    font-size: 19px;
-    color: #8630F2;
-    cursor: pointer;
-}
-
-.text.showMore .moreText {
-    display: inline;
-}
