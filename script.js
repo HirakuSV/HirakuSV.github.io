@@ -38,7 +38,7 @@ const acceptButton = cookieAlert.querySelector('.item');
 if (document.cookie.includes('cookieAllowed=true')) cookieAlert.classList.add('forceHide');
 
 acceptButton.onclick = () => {
-    if (!document.cookie) return alert('Cookies not allowed');
+    if (!document.cookie) return alert('You have disabled cookies');
     document.cookie = `cookieAllowed=true; max-age=${60*60*24*30}`
     cookieAlert.classList.add('hidden');
 }
