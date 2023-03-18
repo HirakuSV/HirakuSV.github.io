@@ -18,17 +18,6 @@ btn.addEventListener('click', function (r) {
     }, 1000)
 });
 
-const rdmBtn = document.querySelector('.rdmBtn');
-const textSeq = document.querySelector('.text');
-rdmBtn.addEventListener('click', () => {
-    textSeq.classList.toggle('showMore');
-    if (rdmBtn.innerText == 'Read more') {
-        rdmBtn.innerText = 'Read less';
-    } else {
-        rdmBtn.innerHTML = 'Read more';
-    }
-});
-
 function setUnData() {
     let unElements = document.querySelectorAll('[id=name]');
     let targets = document.querySelectorAll('[class=target]');
@@ -43,3 +32,13 @@ const urlParams = new URLSearchParams(window.location.search);
 const reqParam = urlParams.get('req');
 if (reqParam === 'fc') document.cookie = "req=fc; expires=0;";
 if (document.cookie.includes("req=fc")) setUnData();
+
+const cookieAlert = document.querySelector('.cookieWrap');
+const acceptButton = cookieAlert.querySelector('.item');
+if (document.cookie.includes('cookieAllowed=true')) cookieAlert.classList.add('forceHide');
+
+acceptButton.onclick = () => {
+    if (!document.cookie) return alert('Cookies not allowed');
+    document.cookie = `cookieAllowed=true; max-age=${60*60*24*30}`
+    cookieAlert.classList.add('hidden');
+}
