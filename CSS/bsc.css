@@ -93,7 +93,7 @@ h1, h2, h3, h4, p {
     max-width: 365px;
     border-radius: 15px;
     text-align: center;
-    padding: 25px 25px 30px ;
+    padding: 25px 25px 30px;
 }
 
 .cookieWrap img {
@@ -124,6 +124,7 @@ h1, h2, h3, h4, p {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    
 }
 
 .cookieWrap.hidden {
