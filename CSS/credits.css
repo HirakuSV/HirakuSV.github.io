@@ -1,9 +1,28 @@
+h1 {
+    color: white;
+    text-align: center;
+}
+
+hr {
+    border: solid 1.9px white;
+    width: 80px;
+    animation: sclar 10.5s linear infinite;
+}
+
 ul li {
     color: white;
     text-align: center;
+    list-style: none;
+    font-size: 17px;
 }
 
 ul li a {
     text-decoration: none;
     color: #8630F2;
+}
+
+@keyframes sclar {
+    50% {
+        width: 300px;
+    }
 }
