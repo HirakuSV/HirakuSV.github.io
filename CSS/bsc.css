@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 * {
-    border: 0;
-    padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
 body {
+    border: 0;
+    padding: 0;
     background-color: #262626;
     max-width: 100%;
     overflow-x: hidden;
@@ -73,7 +73,7 @@ nav ul li a:hover:after {
 #center {
     position: absolute;
     left: 50%;
-    transform: translate(-45%);
+    transform: translate(-50%);
 }
 
 h1, h2, h3, h4, p {
