@@ -9,25 +9,24 @@
 
 .abtcontains img {
     position: absolute;
-    width: 250px;
-    top: -277px;
+    width: 421px;
+    top: -246px;
     border-radius: 50%;
-    left: 50%;
-    transform: translate(-65%);
+    left: -332px;
 }
 
 .abtcontains h1 {
     position: relative;
-    top: -32px;
-    left: -40px;
+    top: -154px;
+    left: 166px;
     font-size: 40px;
 }
 
 .abtcontains p {
     position: relative;
     font-size: 19px;
-    left: -40px;
-    top: -45px;
+    left: 165px;
+    top: -161px;
 }
 
 .abtcontains a {

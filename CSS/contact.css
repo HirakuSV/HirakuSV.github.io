@@ -1,20 +1,27 @@
-#contact {
+.box {
     position: absolute;
     background-color: #fff;
     width: 675px;
     height: 455px;
-    left: 50%;
-    top: 1600px;
-    top: 1568px;
+    left: 450px;
+    top: 1620px;
     transform: translateX(-50%);
     border-radius: 10px;
     overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr)
 }
 
 .cninfo {
     background: #fff;
+}
+
+#contact img {
+    position: absolute;
+    width: 407px;
+    left: 918px;
+    top: 1572px;
+    z-index: 10;
 }
 
 .textbox {
