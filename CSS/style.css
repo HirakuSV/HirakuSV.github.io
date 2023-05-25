@@ -1,5 +1,6 @@
 .color {
-    color: #8630F2
+    color: #8630F2;
+    font-weight: 400;
 }
 
 .hero .ghost {
@@ -22,7 +23,7 @@
     width: 578px;
     height: 105px;
     left: 218px;
-    top: 206px;
+    top: 154px;
     font-style: normal;
     font-weight: 600;
     font-size: 45px;
@@ -34,7 +35,7 @@
     width: 522px;
     height: 94px;
     left: 211px;
-    top: 245px;
+    top: 204px;
     font-style: normal;
     font-weight: 400;
     font-size: 23px;
@@ -86,7 +87,7 @@
     position: absolute;
     font-size: 32px;
     left: 45px;
-    top: 242px;
+    top: 189px;
 }
 
 .socials ul li {
