@@ -5,19 +5,22 @@ let check = false;
 if (check == true) window.location.href = './notsupported.html';
 
 const btn = document.querySelector('.button');
-btn.addEventListener('click', function (r) {
-    let x = r.clientX - r.target.offsetLeft;
-    let y = r.clientY - r.target.offsetTop;
-    let ripples = document.createElement('span');
-    ripples.setAttribute('id', 'ripps');
-    ripples.style.left = `${x}px`;
-    ripples.style.top = `${y}px`;
-    this.appendChild(ripples);
-    setTimeout(() => {
-        ripples.remove();
-    }, 1000)
-});
+if (btn) {
+    btn.addEventListener('click', function (r) {
+        let x = r.clientX - r.target.offsetLeft;
+        let y = r.clientY - r.target.offsetTop;
+        let ripples = document.createElement('span');
+        ripples.setAttribute('id', 'ripps');
+        ripples.style.left = `${x}px`;
+        ripples.style.top = `${y}px`;
+        this.appendChild(ripples);
+        setTimeout(() => {
+            ripples.remove();
+        }, 1000)
+    });
+}
 
+let nameStr = 'Pratik Bawane';
 function setUnData() {
     let unElements = document.querySelectorAll('[id=name]');
     let targets = document.querySelectorAll('[class=target]');
@@ -25,6 +28,7 @@ function setUnData() {
     unElements.forEach(r => r.innerHTML = 'Ray');
     targets.forEach(r => r.setAttribute('id', 'hidden'))
     abtLogo.innerHTML = 'Ray-chan';
+    nameStr = 'Ray';
     document.title = 'Ray';
 }
 
@@ -41,3 +45,28 @@ acceptButton.onclick = () => {
     document.cookie = `cookieAllowed=true; max-age=${60*60*24*30}`
     cookieAlert.classList.add('hidden');
 }
+
+// typed-effect.js
+var typedElements = {
+    elem: [
+        { elmId: 'title', content: `Heya, I\'m <span class="color" id="name">${nameStr}</span>!` },
+        { elmId: 'dis', content: `I make <span class="color">Bots, websites and a lot of cool stuff!</span>` },
+    ]
+};
+var currentElementIndex = 0;
+function animateNextElement() {
+    if (currentElementIndex >= typedElements.elem.length) return; // All elements have been animated
+    let currentElement = typedElements.elem[currentElementIndex];
+    new Typed('#' + currentElement.elmId, {
+        strings: [currentElement.content],
+        typeSpeed: 35,
+        loop: false,
+        showCursor: false,
+        onComplete: function () {
+            currentElementIndex++;
+            animateNextElement();
+        }
+    });
+}
+
+animateNextElement();
