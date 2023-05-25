@@ -5,12 +5,13 @@
 
 .hero .ghost {
     position: absolute;
-    width: 624px;
-    height: 601px;
-    left: 744px;
+    width: 401px;
+    height: auto;
+    left: 859px;
     top: 48px;
     animation: gshover ease 3.5s infinite;
 }
+
 
 @keyframes gshover {
     50% {
@@ -144,12 +145,13 @@
 }
 
 footer {
-    position: absolute;
+    position: relative;
     color: #FFFFFF;
     bottom: -1900px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    margin-top: 500px;
 }
 
 footer a {
