@@ -43,12 +43,23 @@
     padding: 2.79px 30.20px;
 }
 
+.cnformSm {
+    position: relative;
+    left: -42px;
+}
+
 .textbox ul li {
     display: inline;
+    margin-left: 3.5px;
 }
 
 .textbox ul li a i {
     font-size: 32px;
+    color: #8630F2;
+}
+
+#insCn {
+    font-size: 34px;
 }
 
 .cnform {
