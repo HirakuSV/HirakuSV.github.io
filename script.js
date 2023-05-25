@@ -50,7 +50,7 @@ acceptButton.onclick = () => {
 var typedElements = {
     elem: [
         { elmId: 'title', content: `Heya, I\'m <span class="color" id="name">${nameStr}</span>!` },
-        { elmId: 'dis', content: `I make <span class="color">Bots, websites and a lot of cool stuff!</span>` },
+        { elmId: 'dis', content: `I make <span class="color">Bots, websites and a lot of <br /> cool stuff!</span>` },
     ]
 };
 var currentElementIndex = 0;
