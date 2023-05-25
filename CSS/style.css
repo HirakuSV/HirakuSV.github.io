@@ -95,12 +95,12 @@
     list-style: none;
 }
 
-#ins {
-    font-size: 40px;
-}
-
 .socials ul li a i {
     color: #FFFFFF;
+}
+
+#ins {
+    font-size: 40px;
 }
 
 .splash {
