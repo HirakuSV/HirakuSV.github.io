@@ -3,6 +3,13 @@ h1 {
     text-align: center;
 }
 
+p {
+    position: relative;
+    color: white;
+    font-size: 12.5px;
+    text-align: center;
+}
+
 hr {
     border: solid 1.9px white;
     width: 80px;
@@ -14,9 +21,22 @@ ul li {
     text-align: center;
     list-style: none;
     font-size: 17px;
+    margin-bottom: 10px;
 }
 
-ul li a {
+.screen {
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+ul {
+    position: absolute;
+    bottom: 0;
+    animation: scrollCredits 20s linear infinite;
+}
+
+a {
     text-decoration: none;
     color: #8630F2;
 }
@@ -24,5 +44,15 @@ ul li a {
 @keyframes sclar {
     50% {
         width: 300px;
+    }
+}
+
+@keyframes scrollCredits {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
     }
 }
