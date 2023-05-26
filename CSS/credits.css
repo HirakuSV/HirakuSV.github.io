@@ -1,13 +1,16 @@
 h1 {
     color: white;
     text-align: center;
+    font-size: 50px;
+    letter-spacing: 2.5px;
 }
 
 p {
     position: relative;
     color: white;
-    font-size: 12.5px;
+    font-size: 13.5px;
     text-align: center;
+    letter-spacing: 0.20px;
 }
 
 hr {
